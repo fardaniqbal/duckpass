@@ -9,5 +9,5 @@ interpreted code, but is probably more convenient than this since you
 don't have to compile it.  I might be re-inventing the wheel here, but
 other open-source password generators I found didn't meet my
 expectations of transparency and minimalism.  I'm trying to follow the
-[https://suckless.org/philosophy/](suckless philosophy) to some
+[suckless philosophy](https://suckless.org/philosophy/) to some
 extent, though not religiously.
