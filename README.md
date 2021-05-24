@@ -4,7 +4,7 @@ to generate a password of length `N`.  Pass argument `--src=RANDSRC`
 to specify source file containing random bytes.  Run with argument
 `-?` for more usage info.
 
-This is mostly an experiment to benchmark against duckpass.sh, which
+This is mostly an experiment to benchmark against `duckpass.sh`, which
 is interpreted code, but is probably more convenient than this since
 you don't have to compile it.  I might be re-inventing the wheel here,
 but other open-source password generators I found didn't meet my
