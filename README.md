@@ -1,3 +1,13 @@
-Password generator implemented with native code.  Mostly just an
-experiment to benchmark with duckpass, which is interpreted code, but
-is probably more portable than this version.
+Password generator implemented in native code.  Run `make` to build,
+then run `./duckpass` to generate a password.  Pass argument `--len=N`
+to generate a password of length `N`.  Pass argument `--src=RANDSRC`
+to specify source file containing random bytes.  Run with argument
+`-?` for more usage info.
+
+This is mostly an experiment to benchmark against duckpass, which is
+interpreted code, but is probably more convenient than this since you
+don't have to compile it.  I might be re-inventing the wheel here, but
+other open-source password generators I found didn't meet my
+expectations of transparency and minimalism.  I'm trying to follow the
+[https://suckless.org/philosophy/](suckless philosophy) to some
+extent, though not religiously.
