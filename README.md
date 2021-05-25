@@ -4,19 +4,26 @@ to generate a password of length `N`.  Pass argument `--src=RANDSRC`
 to specify source file containing random bytes.  Run with argument
 `-?` for more usage info.
 
-# Example(s)
+# Examples
 
 Run `duckpass` with no arguments to print (to `stdout`) a random
 password with at least one lowercase char, one uppercase char, one
-number, and one punctuation char.
+number, and one punctuation char:
 
 ```sh
 $ ./duckpass
 PF%5VLT2toD*
 ```
 
+Use the `--len` option to specify the password length:
+
+```sh
+$ ./duckpass --len=8
+wHu1u*Uo
+```
+
 By default, `duckpass` gets randomness from `/dev/urandom`.  You can
-use the `--src` option to specify a different source of randomness.
+use the `--src` option to specify a different source of randomness:
 
 ```sh
 $ ./duckpass --src=myfile.txt
