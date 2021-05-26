@@ -54,23 +54,17 @@ found:
   Generator](https://sourceforge.net/projects/apwg/) - lightweight
   password generator with both GUI and command line interfaces written
   in FreePascal/Lazarus.
-
 * [Hawkpass](https://github.com/kalpetros/hawkpass) - generates easy
   to remember passphrases; I think it's browser-based.
-
 * [PassGen](https://github.com/chirra/PasGen) - pronounceable password
   generator.
-
 * [Password Tech](https://sourceforge.net/projects/pwgen-win/) -
   password generator with many bells and whistles like pronounceable
   passwords and Lua scripting.
-
 * [PW Generator](https://sourceforge.net/projects/pw-generator/) -
   password generator using c# and .NET framework.
-
 * [RND](https://sourceforge.net/p/rnd2/code/ci/master/tree/) - secure
   character streams and large files.
-
 * [SimpleKey](https://sourceforge.net/projects/simplekey/) - password
   generator that lets you choose from a list of several algorithms.
 
