@@ -1,7 +1,3 @@
-CC = gcc -std=gnu89 --pedantic-errors
-CFLAGS = -Os -Wall
-
+CFLAGS = -std=gnu89 --pedantic-errors -Os -Wall
 duckpass: duckpass.o
-	$(CC) $(CFLAGS) -o $@ $< $(LDFLAGS)
-clean:
-	rm -f duckpass duckpass.o
+clean:; rm -f duckpass *.o
