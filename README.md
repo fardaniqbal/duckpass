@@ -1,8 +1,10 @@
-Password generator implemented in native code.  Run `make` to build,
-then run `./duckpass` to generate a password.  Pass argument `--len=N`
-to generate a password of length `N`.  Pass argument `--src=RANDSRC`
-to specify file to source random numbers from.  Run with argument `-?`
-for more usage info.
+# Duckpass
+
+Duckpass is a simple, no-nonsense password generator implemented in
+native code.  Run `make` to build, then run `./duckpass` to generate a
+password.  Pass argument `--len=N` to generate a password of length
+`N`.  Pass argument `--src=RANDSRC` to specify file to source random
+numbers from.  Run with argument `-?` for more usage info.
 
 # Examples
 
@@ -10,14 +12,14 @@ Run `duckpass` with no arguments to print (to `stdout`) a random
 password with at least one lowercase char, one uppercase char, one
 number, and one punctuation char:
 
-```sh
+```
 $ ./duckpass
 PF%5VLT2toD*
 ```
 
 Use the `--len` option to specify the password length:
 
-```sh
+```
 $ ./duckpass --len=8
 wHu1u*Uo
 ```
@@ -25,7 +27,7 @@ wHu1u*Uo
 By default, `duckpass` gets randomness from `/dev/urandom`.  You can
 use the `--src` option to specify a different source of randomness:
 
-```sh
+```
 $ ./duckpass --src=myfile.txt
 xc@Vt9AT5b!P
 ```
