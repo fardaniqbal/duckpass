@@ -33,7 +33,7 @@ xc@Vt9AT5b!P
 # Why?
 
 This is mostly an experiment to benchmark against
-[`duckpass.sh`](https://github.com/fardaniqbal/duckpass), which is
+[`duckpass.sh`](https://github.com/fardaniqbal/duckpass-sh), which is
 interpreted code, but is probably more convenient than this since you
 don't have to compile it.  I might be re-inventing the wheel here but
 other open-source password generators I found didn't meet my
