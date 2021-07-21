@@ -1,5 +1,6 @@
 /* duckpass.c -- password generator; public domain */
 #include <ctype.h>
+#include <errno.h>
 #include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,7 +11,8 @@
 #define LEN_MAX     512             /* maximum password length */
 
 /* Crash with error message M if EXPR is false. */
-static void verify(int expr, const char *m) { if (!expr) perror(m), exit(1); }
+#define verify(expr, m) ((expr) ? (void) 0 : \
+    (fprintf(stderr, "%s: %s\n", m, errno ? strerror(errno) : "EOF"), exit(1)))
 
 static void
 usage(const char *progname)
