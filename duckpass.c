@@ -29,14 +29,13 @@ usage(const char *progname)
 static const char *
 checkopt(int argc, char *argv[], const char *opt, const char *default_val)
 {
-  int i;
-  for (i = 1; i < argc; i++)
-    if (!strcmp(argv[i], opt) && i+1 < argc && argv[i+1][0] != '-')
-      return argv[i+1];
-    else if (strstr(argv[i], opt) == argv[i] && argv[i][strlen(opt)] == '=')
-      return argv[i] + strlen (opt) + 1;
-    else if (strstr(argv[i], opt) == argv[i] && strstr(opt, "--") != opt)
-      return argv[i] + strlen(opt);
+  for (argv++; --argc; argv++)
+    if (!strcmp(*argv, opt) && argc > 1 && *argv[1] != '-')
+      return argv[1];
+    else if (strstr(*argv, opt) == *argv && (*argv)[strlen(opt)] == '=')
+      return *argv + strlen(opt) + 1;
+    else if (strstr(*argv, opt) == *argv && opt[1] != '-')
+      return *argv + strlen(opt);
   return default_val;
 }
 
